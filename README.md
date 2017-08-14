@@ -1,4 +1,4 @@
-# TreeSortingSearch
+# TreeSortingSearch - Single Page Application
 
 The project is to find the Breadth-First Search using given jquery api. 
 

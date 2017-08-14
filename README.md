@@ -1,19 +1,20 @@
 # TreeSortingSearch
 
-The project is to find the breath first search using given jquery api. 
+The project is to find the Breadth-First Search using given jquery api. 
 
+Additional Feature :  Depth-First Search
 
 Demo : http://ec2-34-252-59-205.eu-west-1.compute.amazonaws.com/TreeSortingSearch
-
 
 # Following things have been followed to develop this project.
 
 1) HTML5 based markup
 2) Used AngularJs to make the interface interactive
 3) Used Bootstrap for responsive / adaptive layout
+4) Followed Folder Struture to maintain the code structure
 5) No database have been used
 
-12) Have used gulp to compile the CSS pre-processor
+6) Have used gulp to compile the CSS pre-processor
 	Require:
 		have used Node to install the following packages
 			follow the document to install node - https://nodejs.org/en/

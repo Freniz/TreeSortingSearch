@@ -22,6 +22,24 @@ Demo : http://ec2-34-252-59-205.eu-west-1.compute.amazonaws.com/TreeSortingSearc
 			* gulp - npm install --global gulp
 			* gulp-concat - npm install --global gulp-concat
 			* gulp-less - npm install --global gulp-less
+
+
+Angular App Struture : 
+
+	Angular
+		-- API
+			- TreeLookup.js
+		-- Controller
+			- TreeView.controller.js
+		-- Plugins
+			- angular.js
+			- jquery.js
+		-- Services
+			- BFSTreeSearch.service.js
+			- DFSTreeSearch.service.js
+			- SearchResultPath.service.js
+		index.main.js
+		app.js
 			
 
 <h1>Requirements</h1>

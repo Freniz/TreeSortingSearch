@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="Tree Sorting, Breath First Search, Depth First Search, Sorting, Tree View">
+      <meta name="author" content="abdulnizam">
+      <title>Tree Search App</title>
+   
+      <link href="css/tree.css" rel="stylesheet">
+      <script src="js/tree.js"></script>
+        
+   </head>
+   <body ng-app="Tree-Search" ng-controller="search">
+      <div id="tree-navbar">
+         <div class="container">
+            <div class="row row2">
+               <div class="col-sm-12">
+                  <h1 style="margin:0px;"><span class="heading">Tree Sorting Search</span></h1>
+               </div>
+               <div class="tree-navbar-search smallsearch col-sm-11 col-xs-11">
+                  <div class="row">
+                     <input ng-model="number" class="tree-navbar-input col-xs-11" type="" placeholder="Enter Number for Search" name="">
+                     <button ng-disabled="searching" ng-click="search()" class="tree-navbar-button col-xs-1">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="jumbotron">
+            <div class="row">
+               <p class="text-danger" ng-if="numberErr">{{numberErr}}</p>
+               <div class="col-xs-12">
+                  <div class="form-group">
+                    <p class="text" >Select the type of sorting</p>
+                     <div class="radio">
+                        <label class="radio-inline">
+                        <input type="radio" id="optionsRadios2" ng-model="searchType" value="bfs">
+                        BFS
+                        </label>
+                        <label class="radio-inline">
+                        <input type="radio" id="optionsRadios2" ng-model="searchType" value="dfs">
+                        DFS
+                        </label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="panel panel-default" ng-class="{'panel-success':isNumberFoundInTree, 'panel-danger':isNumberNotFoundInTree}">
+            <div class="panel-heading">
+               <h3 class="panel-title">{{searchResult? 'Path : '+searchResult:'Tree View'}}</h3>
+            </div>
+            <div class="panel-body">
+               <tree-view parent-path="'/'"></tree-view>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

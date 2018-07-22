@@ -1,6 +1,6 @@
 # TreeSortingSearch - Single Page Application
 
-The project is to find the Breadth-First Search using given jquery api. 
+The project is to find Breadth-First Search using given jquery api. 
 
 Additional Feature :  Depth-First Search
 
